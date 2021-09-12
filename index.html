@@ -1,0 +1,39 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JavaScript Intro</title>
+
+        <!--JavaScript in the head section-->
+        <script type="text/javascript">
+        alert('Hello World');
+        // notice the Alert, it pops up when you open the browser
+        // script content inserted within the head section will execute when called. Also this is a comment
+        </script>
+
+        <meta name="description" content="Ohh this is what google shows a bit of. Nice">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <script>
+            document.write("JavaScript is not Java");
+        </script>
+        
+        <script>
+            let a = 50;
+            let b = 100;
+            if (true) {
+            let a = 60;
+            var c = 10;
+            console.log(a/c); // 6
+            console.log(b/c); // 10
+            }
+            console.log(c); // 10
+            console.log(a); // 50
+        </script>
+        <!--As we can see in the example above, the value of let is limited to its scope. 
+            This modification to var goes a long way to providing a level of organisation while managing large data structures, as it is safer knowing that your variable cannot be reassigned anywhere in its scope.-->
+    </body>
+</html>

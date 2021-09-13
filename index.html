@@ -60,9 +60,9 @@
         </script>
         <br>
 
-    <!--RESTRUCTING THE DOM-->
+    <!--RESTRUCTING THE DOM Interactively-->
         <div>
-            <h1>RESTRUCTURING THE DOM</h1>
+            <h1>RESTRUCTURING THE DOM Interactively</h1>
             <h2>Append to Elements</h2>
             <br>
 
@@ -79,7 +79,33 @@
                 document.getElementById("createHeading").onclick = function() {
                     document.getElementById("emptyParagraph").innerHTML = "<h3>Hi there Buddy!</h3>";
                 }
+                
             </script>
+            <br>
+            <!--Creating a Button within a Button                    -->
+            <button id="createButton">Create Button</button>
+            <span id="addButton"></span>
+            <p id="anEmptyParagraph"></p>
+         
+            <script>
+            document.getElementById("createButton").onclick = function() {
+                         document.getElementById("addButton").innerHTML = "<button id=\"coolStuff\">Cool Stuff</button>";
+                         document.getElementById("coolStuff").onclick = function() {
+                             document.getElementById("anEmptyParagraph").innerHTML = "This is some seriously cool stuff &#128526;";
+                         }
+                     }
+            </script>
+
+            <br>
+            <!--Manipulating STYLES with JS-->
+            <p id="moreText">This is some text</p>  
+            <button id="styleText">Style Text</button>
+            
+            <script>      
+                document.getElementById("styleText").onclick = function() {          
+                    document.getElementById("moreText").style.display = "none";          
+                    }      
+            </script>   
 
 
         </div>

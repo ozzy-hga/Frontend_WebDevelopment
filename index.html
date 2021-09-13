@@ -35,5 +35,55 @@
         </script>
         <!--As we can see in the example above, the value of let is limited to its scope. 
             This modification to var goes a long way to providing a level of organisation while managing large data structures, as it is safer knowing that your variable cannot be reassigned anywhere in its scope.-->
+        <br>
+
+    <!--TRAVERSING THE DOM using a button-->
+        <p id="myText">This is JavaScript!</p>    
+        <button id="myButton">Change text</button>
+        
+        <script>
+            document.getElementById("myButton").onclick = function() {
+                document.getElementById("myText").innerHTML = "This is the new text!";
+            }
+            // this is pretty cool we can still sort this out properly as below
+        </script>
+
+        <!--Now we gonna sort this stuff where we repeating ourself-->
+        <p id="myText2">This is JavaScript!</p>    
+        <button id="myButton" onclick="myFunction()">Change text</button>
+        
+        <script>
+            function myFunction() {
+                document.getElementById("myText2").innerHTML = "This is the new text!";
+            }
+            // this is pretty cool we can still sort this out properly as below
+        </script>
+        <br>
+
+    <!--RESTRUCTING THE DOM-->
+        <div>
+            <h1>RESTRUCTURING THE DOM</h1>
+            <h2>Append to Elements</h2>
+            <br>
+
+            <p id="aParagraph">JavaScript is ....</p>
+            <button id="appendButton">Append Text</button>
+            <span id="emptyParagraph"></span>
+            <button id="createHeading">Create Text</button>
+
+            <script>
+                document.getElementById("appendButton").onclick = function() {
+                    document.getElementById("aParagraph").innerHTML = "i think " + document.getElementById("aParagraph").innerHTML + " awesome!";
+                }
+
+                document.getElementById("createHeading").onclick = function() {
+                    document.getElementById("emptyParagraph").innerHTML = "<h3>Hi there Buddy!</h3>";
+                }
+            </script>
+
+
+        </div>
+        
+
     </body>
 </html>

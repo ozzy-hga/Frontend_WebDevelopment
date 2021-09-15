@@ -1,0 +1,15 @@
+section {
+    background-color: white;
+    text-align: center;
+    height: 720px;
+    color: white;
+}
+
+#colorOne, #colorTwo, #colorThree, #colorFour, #colorFive,
+ #colorSix, #colorSeven  {
+    height: 70px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+}
+

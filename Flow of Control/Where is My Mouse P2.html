@@ -1,0 +1,65 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Conditionals in JavaScript 2</title>
+        
+        <style>
+            p{
+                font-size: 4em;
+                font-weight: 850;
+            }
+        </style>
+        
+    </head>
+    
+    <body onmousemove="printY(event)">
+        <hgroup>
+            <h1>Conditionals in JS</h1>
+            <h2 id="subHead">Where is My Mouse</h2>
+        </hgroup>
+        <p id="reading"></p>
+
+        <script>
+
+            // Now obsolete: console.log(window.innerHeight);
+            // part two is adding a constant of the Y value since its doesnt change
+            // and the also adding a let variable which changes.
+
+            const docHeight = window.innerHeight;       //PART TWO Makes the console.log window.iinerHeight obsolete
+            const docWidth = window.innerWidth;
+            function printY(event){
+                // Top statement obsolete: console.log(event.clientY);
+                let mouseY = event.clientY; // This makes the top statement obsolete
+                let mouseX = event.clientX;
+
+               /* if(mouseY < docHeight/2){
+                    document.getElementById("reading").innerHTML = "UP"
+                }
+                else{
+                    document.getElementById("reading").innerHTML = "DOWN"
+                }*/
+                
+                if(mouseX < docWidth/2 && mouseY < docHeight/2){
+                    document.getElementById("reading").innerHTML = "TOP LEFT"
+                }
+                else if (mouseX > docWidth/2 && mouseY < docHeight/2){
+                    document.getElementById("reading").innerHTML = " TOP RIGHT"
+                }
+                else if (mouseX < docWidth/2 && mouseY > docHeight/2){
+                    document.getElementById("reading").innerHTML = " BOTTOM LEFT"
+                }
+                else{
+                    document.getElementById("reading").innerHTML = " BOTTOM RIGHT"
+                }
+                //ok so the above doesnt tell us if our mouse is at the up or down position. so now we gon add it in Part 2
+
+            }
+
+            //the midpoint of the vw is found by diving the innerHeight by 2
+        </script>
+
+    </body>
+
+</html>

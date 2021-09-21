@@ -19,10 +19,10 @@
 	<main>
         
         <div class="calc">
-        <div class="calcDisplay"></div>    
+        <div class="calcDisplay"><span id="outputValue"></span></div>    
         <section>
-            <div class="numbers">
-                <button id="9">9</button>
+            <div class="numbers" onclick="displayNumber();">
+                <button id="9" onclick="displayNumber()">9</button>
                 <button id="8">8</button>
                 <button id="7">7</button>
                 <button id="6">6</button>
@@ -48,7 +48,10 @@
         </div>    
     </main>
 	<footer></footer>
-	<script src="js/calcResponse.js"></script>
+	<script src="js/calcResponse.js"> 
+    </script>
+
+    
 </body>
 
 </html>

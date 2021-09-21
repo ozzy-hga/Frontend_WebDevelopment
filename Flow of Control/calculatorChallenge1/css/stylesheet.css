@@ -9,6 +9,9 @@ body{
     width: 435px;
     background-color: darkgrey;
     margin: auto;
+    color: white;
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .calc{

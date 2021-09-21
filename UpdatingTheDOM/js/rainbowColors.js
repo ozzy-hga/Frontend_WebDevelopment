@@ -33,5 +33,10 @@ function changeColorSeven() {
     document.getElementById("emptyText7").innerHTML = "<h1>Violet</h1>";
 }
 
+//Ok so this is us repeating ourself. you can do this and add a Parameter wchihc is ()
 
+function changeColors(color) {
+    document.getElementById(color).style.backgroundColor = color;
+    
+}
 

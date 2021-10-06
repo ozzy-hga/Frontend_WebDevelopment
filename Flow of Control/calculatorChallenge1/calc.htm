@@ -19,10 +19,12 @@
 	<main>
         
         <div class="calc">
-        <div class="calcDisplay"><span id="outputValue"></span></div>    
+        <div class="calcDisplay">
+            <input type="text" placeholder="0" name="displayValue"/>
+            <span id="outputValue"></span></div>    
         <section>
             <div class="numbers" onclick="displayNumber();">
-                <button id="9" onclick="displayNumber()">9</button>
+                <button id="9" onclick="calcNumbers(9)">9</button>
                 <button id="8">8</button>
                 <button id="7">7</button>
                 <button id="6">6</button>
@@ -44,11 +46,14 @@
                     <button id="equals">=</button>
                 </div>    
             </div>    
-        </section>
+        </section> 
         </div>    
     </main>
 	<footer></footer>
-	<script src="js/calcResponse.js"> 
+	<script> 
+        function calcNumbers(result){
+            calc.displayValue.value=calc.displayValue.value+result;
+        }
     </script>
 
     
